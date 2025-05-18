@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mall - OJmesh Enterprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">OJmesh Enterprise</a></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active">Shop <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="bookshop.html">Bookshop</a>
+                            <a href="mall.html" class="active">Mall</a>
+                            <a href="electronics.html">Electronics</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="search.html"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Hero Section -->
+    <section class="shop-hero mall-hero">
+        <div class="container" img src="mallimage.jpg">
+            <h1>Mall</h1>
+            <p>Discover a wide range of products for your home and lifestyle</p>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-content">
+        <div class="container">
+            <div class="shop-sidebar">
+                <div class="sidebar-widget">
+                    <h3>Categories</h3>
+                    <ul class="category-list" id="mall-categories">
+                        <!-- Categories will be loaded dynamically -->
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>Filter By</h3>
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <div class="price-range">
+                            <input type="range" min="0" max="500" value="250" class="slider" id="priceRange">
+                            <div class="price-values">
+                                <span>$0</span>
+                                <span>$500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Department</h4>
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="department" value="home"> Home & Living</label>
+                            <label><input type="checkbox" name="department" value="kitchen"> Kitchen</label>
+                            <label><input type="checkbox" name="department" value="fashion"> Fashion</label>
+                            <label><input type="checkbox" name="department" value="beauty"> Beauty</label>
+                            <label><input type="checkbox" name="department" value="toys"> Toys & Games</label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Rating</h4>
+                        <div class="rating-filter">
+                            <div class="star-rating">
+                                <input type="radio" id="5-stars" name="rating" value="5">
+                                <label for="5-stars" class="star">★★★★★</label>
+                            </div>
+                            <div class="star-rating">
+                                <input type="radio" id="4-stars" name="rating" value="4">
+                                <label for="4-stars" class="star">★★★★☆</label>
+                            </div>
+                            <div class="star-rating">
+                                <input type="radio" id="3-stars" name="rating" value="3">
+                                <label for="3-stars" class="star">★★★☆☆</label>
+                            </div>
+                            <div class="star-rating">
+                                <input type="radio" id="2-stars" name="rating" value="2">
+                                <label for="2-stars" class="star">★★☆☆☆</label>
+                            </div>
+                            <div class="star-rating">
+                                <input type="radio" id="1-stars" name="rating" value="1">
+                                <label for="1-stars" class="star">★☆☆☆☆</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn apply-filters">Apply Filters</button>
+                    <button class="btn reset-filters">Reset</button>
+                </div>
+            </div>
+            <div class="shop-main">
+                <div class="shop-header">
+                    <div class="sort-options">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort">
+                            <option value="popular">Most Popular</option>
+                            <option value="newest">Newest Arrivals</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Customer Rating</option>
+                        </select>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search in mall..." id="shop-search">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="product-grid" id="mall-products">
+                    <!-- Products will be loaded dynamically -->
+                </div>
+                <div class="pagination">
+                    <button class="btn prev-page" disabled>Previous</button>
+                    <div class="page-numbers">
+                        <span class="active">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                    </div>
+                    <button class="btn next-page">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>OJmesh Enterprise</h3>
+                    <p>Your one-stop shop for books, mall items, and electronics.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 256 kakamega St, kenya</p>
+                    <p><i class="fas fa-phone"></i> +254 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@ojmesh.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 OJmesh Enterprise. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>

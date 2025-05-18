@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJmesh Enterprise - Bookshop, Mall & Electronics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">OJmesh Enterprise</a></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="shop.html">Shop <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="bookshop.html">Bookshop</a>
+                            <a href="mall.html">Mall</a>
+                            <a href="electronics.html">Electronics</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="search.html"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to OJmesh Enterprise</h2>
+            <p>Your one-stop shop for books, mall items, and electronics</p>
+            
+        </div>
+    </section>
+<!-- Featured Products Section -->
+<section class="featured-products">
+    <div class="container">
+        <div class="section-header">
+            <h2>Featured Products</h2>
+            <div class="section-controls">
+                <button class="prev-featured"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-featured"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        
+        <div class="featured-products-container">
+            <div class="featured-products-track" id="featured-products-track">
+                <!-- Products will be loaded here dynamically -->
+            </div>
+        </div>
+        
+        <div class="featured-pagination">
+            <!-- Pagination dots will be added here dynamically -->
+        </div>
+    </div>
+</section>
+    <!-- Departments -->
+    <section class="departments">
+        <div class="container">
+            <h2>Our Departments</h2>
+            <div class="department-grid">
+                <div class="department-card">
+                    <img src="bookshopimage.jpg" alt="Bookshop">
+                    <h3>Bookshop</h3>
+                    <p>Browse our extensive collection of books</p>
+                    <a href="bookshop.html" class="btn">Visit Bookshop</a>
+                </div>
+                <div class="department-card">
+                    <img src="mallimage.jpg" alt="Mall">
+                    <h3>Mall</h3>
+                    <p>Discover various products for your daily needs</p>
+                    <a href="mall.html" class="btn">Visit Mall</a>
+                </div>
+                <div class="department-card">
+                    <img src="electronics image.jpg" alt="Electronics">
+                    <h3>Electronics</h3>
+                    <p>Latest gadgets and electronic devices</p>
+                    <a href="electronics.html" class="btn">Visit Electronics</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>OJmesh Enterprise</h3>
+                    <p>Your one-stop shop for books, mall items, and electronics.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 256 kakamega St, Nairobi</p>
+                    <p><i class="fas fa-phone"></i> +254 11 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@ojmesh.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 OJmesh Enterprise. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

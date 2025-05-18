@@ -1,0 +1,28 @@
+/* Shipping Policy Styles */
+.shipping-policy {
+    padding: 60px 0;
+}
+
+.policy-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.policy-header h1 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.last-updated {
+    color: var(--gray-color);
+    font-style: italic;
+}
+
+.policy-section {
+    margin-bottom: 40px;
+}
+
+.policy-section h2 {
+    font-size: 24px;
+    color:whitesmoke;}

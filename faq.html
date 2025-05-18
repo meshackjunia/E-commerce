@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - OJmesh Enterprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">OJmesh Enterprise</a></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Shop <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="bookshop.html">Bookshop</a>
+                            <a href="mall.html">Mall</a>
+                            <a href="electronics.html">Electronics</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="search.html"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find answers to common questions about our products and services</p>
+                <div class="search-faq">
+                    <input type="text" placeholder="Search FAQs..." id="faq-search">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="faq-categories">
+                <div class="category active" data-category="all">All Questions</div>
+                <div class="category" data-category="ordering">Ordering</div>
+                <div class="category" data-category="shipping">Shipping</div>
+                <div class="category" data-category="returns">Returns</div>
+                <div class="category" data-category="payments">Payments</div>
+                <div class="category" data-category="account">Account</div>
+            </div>
+            
+            <div class="faq-accordion">
+                <!-- Ordering Questions -->
+                <div class="faq-item" data-category="ordering">
+                    <div class="faq-question">
+                        <h3>How do I place an order?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To place an order:</p>
+                        <ol>
+                            <li>Browse our products and add items to your cart</li>
+                            <li>Proceed to checkout when ready</li>
+                            <li>Enter your shipping and payment information</li>
+                            <li>Review your order and confirm your purchase</li>
+                        </ol>
+                        <p>You'll receive an order confirmation email with all the details.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="ordering">
+                    <div class="faq-question">
+                        <h3>Can I modify or cancel my order after placing it?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can modify or cancel your order within 30 minutes of placing it by contacting our customer service at <a href="mailto:support@ojmesh.com">support@ojmesh.com</a> or calling +123 456 7890.</p>
+                        <p>After this window, your order may already be in processing and cannot be modified.</p>
+                    </div>
+                </div>
+                
+                <!-- Shipping Questions -->
+                <div class="faq-item" data-category="shipping">
+                    <div class="faq-question">
+                        <h3>What shipping options do you offer?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer several shipping options:</p>
+                        <ul>
+                            <li><strong>Standard Shipping:</strong> 3-5 business days ($5.99)</li>
+                            <li><strong>Express Shipping:</strong> 2-3 business days ($12.99)</li>
+                            <li><strong>Overnight Shipping:</strong> Next business day ($24.99)</li>
+                        </ul>
+                        <p>Free standard shipping is available for orders over $50.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="shipping">
+                    <div class="faq-question">
+                        <h3>How can I track my order?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Once your order has shipped, you'll receive a shipping confirmation email with a tracking number. You can use this tracking number to:</p>
+                        <ol>
+                            <li>Track your package directly on our website under "My Orders"</li>
+                            <li>Visit the carrier's website (UPS, FedEx, or USPS) and enter your tracking number</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <!-- Returns Questions -->
+                <div class="faq-item" data-category="returns">
+                    <div class="faq-question">
+                        <h3>What is your return policy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept returns within 30 days of delivery for most items. To be eligible for a return:</p>
+                        <ul>
+                            <li>Items must be unused and in their original condition</li>
+                            <li>Original packaging must be included</li>
+                            <li>A receipt or proof of purchase is required</li>
+                        </ul>
+                        <p>Some items are non-returnable, including digital products, perishable goods, and personalized items.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="returns">
+                    <div class="faq-question">
+                        <h3>How do I initiate a return?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To initiate a return:</p>
+                        <ol>
+                            <li>Log in to your account and go to "My Orders"</li>
+                            <li>Select the item(s) you wish to return</li>
+                            <li>Follow the prompts to generate a return label</li>
+                            <li>Package your return and attach the label</li>
+                            <li>Drop off at the designated carrier location</li>
+                        </ol>
+                        <p>Refunds are typically processed within 5-7 business days after we receive your return.</p>
+                    </div>
+                </div>
+                
+                <!-- Payments Questions -->
+                <div class="faq-item" data-category="payments">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept the following payment methods:</p>
+                        <ul>
+                            <li>Visa, Mastercard, American Express, Discover</li>
+                            <li>PayPal</li>
+                            <li>Apple Pay</li>
+                            <li>Google Pay</li>
+                            <li>OJmesh Gift Cards</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="payments">
+                    <div class="faq-question">
+                        <h3>Is it safe to enter my credit card information on your site?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, your security is our top priority. We use industry-standard SSL encryption to protect your information. We do not store your full credit card details on our servers.</p>
+                        <p>All payments are processed through PCI-compliant payment processors.</p>
+                    </div>
+                </div>
+                
+                <!-- Account Questions -->
+                <div class="faq-item" data-category="account">
+                    <div class="faq-question">
+                        <h3>How do I reset my password?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To reset your password:</p>
+                        <ol>
+                            <li>Go to the <a href="login.html">login page</a></li>
+                            <li>Click on "Forgot password?"</li>
+                            <li>Enter the email address associated with your account</li>
+                            <li>Check your email for a password reset link</li>
+                            <li>Follow the instructions to create a new password</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-category="account">
+                    <div class="faq-question">
+                        <h3>How do I update my account information?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can update your account information at any time:</p>
+                        <ol>
+                            <li>Log in to your account</li>
+                            <li>Go to "Account Settings"</li>
+                            <li>Update your personal information, shipping addresses, or payment methods</li>
+                            <li>Click "Save Changes"</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-contact">
+                <h2>Still have questions?</h2>
+                <p>Our customer service team is happy to help!</p>
+                <a href="contact.html" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>OJmesh Enterprise</h3>
+                    <p>Your one-stop shop for books, mall items, and electronics.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="faq.html" class="active">FAQ</a></li>
+                        <li><a href="shipping.html">Shipping Policy</a></li>
+                        <li><a href="returns.html">Returns & Refunds</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Business St, City</p>
+                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@ojmesh.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 OJmesh Enterprise. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="faq.js"></script>
+</body>
+</html>

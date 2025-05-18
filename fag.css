@@ -1,0 +1,145 @@
+/* FAQ Page Styles */
+.faq-section {
+    padding: 60px 0;
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-header h1 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.search-faq {
+    max-width: 600px;
+    margin: 30px auto 0;
+    position: relative;
+}
+
+.search-faq input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.search-faq button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.faq-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category {
+    padding: 8px 20px;
+    background: #f5f5f5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category.active {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.category:hover {
+    background: #e0e0e0;
+}
+
+.category.active:hover {
+    background: var(--secondary-color);
+}
+
+.faq-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: white;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background: #f9f9f9;
+}
+
+.faq-item.active .faq-answer {
+    padding: 20px;
+    max-height: 500px;
+}
+
+.faq-answer p, .faq-answer ul, .faq-answer ol {
+    margin-bottom: 15px;
+}
+
+.faq-answer a {
+    color: var(--secondary-color);
+}
+
+.faq-contact {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.faq-contact h2 {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .faq-question {
+        padding: 15px;
+    }
+    
+    .faq-question h3 {
+        font-size: 16px;
+    }
+}

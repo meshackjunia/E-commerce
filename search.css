@@ -1,0 +1,52 @@
+/* Search Page Styles */
+.search-section {
+    padding: 40px 0;
+}
+
+.search-box-container {
+    margin-bottom: 30px;
+}
+
+.search-box-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-box-container input {
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.search-box-container button {
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.search-results-container {
+    display: flex;
+    gap: 30px;
+}
+
+.search-filters {
+    width: 250px;
+}
+
+.search-results {
+    flex: 1;
+}
+
+/* Add more styles as needed */
